@@ -1,0 +1,31 @@
+:root {
+  --bg: #fbf7f0;
+  --text: #2b2622;
+  --muted: #6e655c;
+  --accent: #8c3b2a;
+  --rule: #e4dac9;
+}
+* { box-sizing: border-box; }
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--text);
+  font-family: Georgia, "Iowan Old Style", "Times New Roman", serif;
+  line-height: 1.7;
+  font-size: 18px;
+}
+header, main, footer { max-width: 720px; margin: 0 auto; padding: 0 1.25rem; }
+header { padding-top: 2rem; display: flex; justify-content: space-between; align-items: baseline; flex-wrap: wrap; gap: .5rem; border-bottom: 1px solid var(--rule); padding-bottom: 1rem; }
+.site-name { font-size: 1.25rem; font-weight: bold; color: var(--text); text-decoration: none; }
+nav a { margin-left: 1.25rem; color: var(--muted); text-decoration: none; }
+nav a:hover, nav a.active { color: var(--accent); border-bottom: 2px solid var(--accent); }
+h1 { font-size: 2.2rem; line-height: 1.2; margin: 2rem 0 .25rem; }
+h2 { font-size: 1.4rem; margin-top: 2.2rem; color: var(--accent); }
+.subtitle { color: var(--muted); margin-top: 0; }
+a { color: var(--accent); }
+.links a { margin-right: 1rem; }
+.card { border-left: 3px solid var(--rule); padding-left: 1rem; margin: 1.25rem 0; }
+.card h3 { margin: 0; font-size: 1.1rem; }
+footer { color: var(--muted); font-size: .85rem; padding: 2rem 1.25rem; margin-top: 3rem; border-top: 1px solid var(--rule); }
+.hero { display: flex; gap: 1.5rem; align-items: center; flex-wrap: wrap; }
+.hero img { width: 160px; height: 160px; border-radius: 50%; object-fit: cover; background: var(--rule); }
